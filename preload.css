@@ -37,9 +37,7 @@ background:var(--blue-accent-color);
 animation: slider 4.5s 1s 1 forwards;
 }
 
-.slider > div{
 
-}
 @keyframes text-opacity{
 from{
     opacity: 1;
