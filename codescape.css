@@ -145,13 +145,7 @@
         flex-wrap: nowrap;
 
     }
-    .character img{
-        z-index: 2 ;
-        height: 100vh;
-        pointer-events: none;
-        cursor: default;
-        transition: all 0.5s ease-in;
-    }
+  
     .background-asset{
         z-index: -1;
         height: 100vh;
@@ -172,19 +166,38 @@
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
+       
     }
-
+    .main-character{
+       width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        object-fit: cover;
+        overflow: hidden;
+    }
     .character h1{
         transform: translateY(-55%);
         z-index: 1;
         display: flex;
         text-align: center;
-  
+        overflow: hidden;
         position:absolute;
         font-family: 'Unbounded';
         color: var(--white-accent-color);
         font-size: clamp(50px, 8vw + 1rem, 13rem);
         font-weight: 400;
+    }
+    .character img{
+        object-fit: cover;
+        z-index: 2 ;
+   
+        pointer-events: none;
+        cursor: default;
+        transition: all 0.5s ease-in;
+        overflow: hidden;
+        
+      
     }
 
     .play-btn{
@@ -971,9 +984,12 @@
         .cards{
             grid-template-columns: 1fr 1fr;
         }
+        .main-character{
+            transform: rotate(35deg) translateX(-250px);
+        }
+       
         .character img{
-            transform: rotate(30deg);
-              padding-right: 250px;
+            width: 400px;
            z-index: -2;
            opacity: 0.5;
           }
@@ -1069,6 +1085,7 @@
           }
           .process-right a img {
             width: 350px;
+            overflow: hidden;
           }
           .dev-cards{
            flex-direction: column;

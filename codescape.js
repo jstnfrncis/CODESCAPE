@@ -2,6 +2,9 @@ setTimeout(() => {
     document.getElementById("title-heading").style.display = "none";
   }, 2000);
 
+  setTimeout(() => {
+    document.getElementById("overflow").style.display = "none";
+  }, 5500);
 
 
 
