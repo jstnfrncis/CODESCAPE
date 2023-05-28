@@ -49,7 +49,9 @@
 
     /* HERO SESCTION ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
-
+    .no-scroll{
+        overflow: hidden;
+    }
     header{
         z-index: 2;
         max-width: 1300px;
@@ -503,6 +505,7 @@
         justify-content: center;
         align-items: center;
         background: var(--linear-background);
+        overflow: hidden;
 
     }
 
@@ -682,7 +685,7 @@
 
 
     .contact-container{
-        min-height: 60vh;
+        min-height: 70vh;
         font-family: 'Heebo';
     }
     .contact-container h1{
@@ -949,6 +952,7 @@
             grid-template-columns: 1fr;
             margin: 0 auto;
         width: 90%;
+        min-height: 70vh;
             
         }
         .left-contact{
@@ -1066,5 +1070,10 @@
           .process-right a img {
             width: 350px;
           }
+          .dev-cards{
+           flex-direction: column;
+           padding-block: 25px;
+          }
+          
  
     }
