@@ -1,0 +1,55 @@
+.slider h1{
+    z-index: 101;
+    position: absolute;
+    font-family: var(--font-family);
+    color: var(--white-accent-color);
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: text-opacity 1.5s .5s 1 forwards;
+}
+.slider div:nth-child(1){
+z-index: 100;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: var(--linear-background);
+animation: slider 4s 0.5s 1 forwards;
+
+}
+.slider div:nth-child(2){
+z-index: 99;
+position: absolute;
+right: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background:var(--blue-accent-color);
+animation: slider 4.5s 1s 1 forwards;
+}
+@keyframes text-opacity{
+from{
+    opacity: 1;
+    transition: all ease 0.1s;
+}
+
+to{
+    opacity: 0;
+    display: none;
+}
+}
+@keyframes slider {
+to{
+    transform: translateX(100%);
+
+}
+
+from{
+  
+}
+}
